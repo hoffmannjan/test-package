@@ -1,0 +1,29 @@
+{
+  "name": "test-client",
+  "version": "0.0.5",
+  "description": "",
+  "author": "Jan Hoffmann <jan@hfmn.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "prepare": "npm run build",
+    "clean": "rm -rf dist/",
+    "build": "tsc -p tsconfig.json",
+    "test": "echo \"add tests\" && exit 0"
+  },
+  "dependencies": {
+    "casper-js-sdk": "2.7.6"
+  },
+  "devDependencies": {
+    "ts-node": "^10.2.1"
+  }
+}
+
